@@ -1,0 +1,340 @@
+#banner_item{
+margin-top: 90px;
+.container{
+    max-width: 1211px !important;
+    margin: 0 auto !important;
+.left_side{
+    @include _main($display:flex);
+    flex-direction: column;
+.card1{
+    margin-bottom: 30px;
+    @include _main($width:718px);
+    .upside_items{
+    .img{
+        @include _main($width:718px, $height:349px , $position:relative);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+img{
+    transition: .3s ease-in-out;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    @include _main($width:100%, $height:100%, $object_f:contain, $cursor:pointer);
+&:hover{
+transform: scale(1.1);
+}
+}
+a{
+.icon{
+    @include _main($position:absolute , $width:90px, $height:90px, $border:1px solid white, $top:37%, $left:42%, $border-radius:45px);
+display: flex;
+align-items: center;
+justify-content: center;
+.bi{
+    color: white;
+}
+}}
+    }
+    }
+.downside_items{
+width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+padding: 20px 55px;
+border: 1px solid #dcdcdc;
+.first_down_item{
+    @include _main($display:flex);
+    align-items: center;
+    gap: 10px;
+.img{
+    @include _main($width:34px, $height:34px, $border-radius :17px);
+    overflow: hidden;
+}
+.bi{
+    color: blue;
+}
+h5{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    @include _main($f_size:16px);
+    margin: 0;
+    &:hover{
+        color: blue;
+    }
+}
+p{
+    @include _main($f_size:16px, $color:#686777, $margin:0);
+}
+}
+.second_down_item{
+     margin-top: 20px;
+    h3{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.3;
+    a{
+     transition: .3s ease-in-out;
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            color: blue;
+        }
+    }
+    }
+    p{
+        @include _main($f_size:15px, $color:#686777, $margin:0);
+    }
+}
+.third_down_item{
+    margin-top: 30px;
+    @include _main($display:flex);
+    justify-content: space-between;
+    .left_item{
+        padding: 0 10px 0 0;
+         position: relative;
+.bi{
+    transition: .3s ease-in-out;
+    @include _main($position:absolute, $top:4px, $left:91px);
+}
+.bi2{
+    transition: .3s ease-in-out;
+    opacity: 0;
+    @include _main($position:absolute, $top:4px, $left:79px);
+}
+a{
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    color: #686777;
+}   
+&:hover .bi{
+transform: translateX(16px);
+opacity: 0;
+}
+&:hover .bi2{
+transform: translateX(15px);
+opacity: 1;
+color: blue;
+}
+&:hover a{
+color:blue
+}
+    }
+    .right_item{ 
+        a{
+            transition: .3s ease-in-out;
+            text-decoration: none;  
+            color:#686777 ;
+        }
+        .bi{
+            transition: .4s ease-in-out;
+        }
+        &:hover a{
+            color: blue;
+        }   
+        &:hover .bi{
+            color: blue;
+        }   
+    }
+}
+}
+}
+.card2{
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 108px 31px 40px 33px;
+    @include _main($width:718px, $border:1px solid #dcdcdc, $position:relative);
+    p{
+        font-size: 20px;
+        color: #1f1841;
+        line-height: 1.3;
+    }
+    h5{
+        font-size: 18px;
+    }
+    .img1{
+        position: absolute;
+        top: -44px;
+        left: -232px;
+    }
+    .img3{
+        position: absolute;
+        top: 61px;
+        left: 32px;
+    }
+    .img2{
+        position: absolute;
+        bottom: -2px;
+        right: -71px;
+    }
+    .img4{
+        position: absolute;
+        bottom: -33px;
+        right: 47px;
+    }
+}
+}
+.right_side{
+    @include _main($display:flex);
+    flex-direction: column;
+    .input_items{
+        @include _main($display:flex);
+        margin-bottom: 30px;
+input{
+    @include _main($color:#1f1841,$width:80%, $height:50px, $border-radius:10px, $border:none , $padding:0 15px );
+    outline: none;
+    background: #f7f7f7;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+button{
+    @include _main( $display:flex,$color:blue,$width:20%, $height:50px, $border:none, $border-radius:10px);
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}}
+h4{
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+        position:absolute ;
+        content: "";
+        @include _main($width:66px, $height:3px , $back-color:blue, $top:38px, $left:3px);;
+    }
+}
+.middle_field{
+    display: flex;
+    .card2{
+        @include _main($width:100%, $display:flex , $margin:0 0 15px 0);
+        .img{
+            margin-right: 13px;
+            @include _main($width:80px, $height:90px, $border-radius:10px);
+            overflow: hidden;
+            img{
+                @include _main($width:100%, $height:100%, $object_f:cover,$cursor:pointer);
+            }
+        }
+        .writting_items{
+            margin-left: 10px;
+            h5{
+    font-size: 18px;
+    a{
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: blue;
+        }
+    }
+}
+        }
+    }
+}
+.categories{
+    margin-top: 40px;
+    width: 100%;
+    h4{
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position:absolute ;
+            content: "";
+            @include _main($width:66px, $height:3px , $back-color:blue, $top:37px, $left:3px);;  
+        }}
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        @include _main($margin:0, $padding:0);  
+              margin-left: 20px;
+        li{
+            position: relative;
+            line-height: 2.7;  
+            &:hover .bi{
+                transform: translateX(7px);
+           }
+            .bi{            transition: .3s ease-in-out;
+                position: absolute;
+                top: 11px;
+                left: -24px;
+                color: blue;
+            }
+            a{transition: .3s ease-in-out;
+                text-decoration: none;
+                color: black;
+          &:hover{
+                color: blue;
+           }
+            }
+        }
+    }
+}
+.comments{
+    margin-top: 40px;
+    width: 100%;
+    h4{
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position:absolute ;
+            content: "";
+            @include _main($width:86px, $height:3px , $back-color:blue, $top:39px, $left:1px);; 
+        }}
+        .card2{
+            margin-top: 22px;
+       display: flex;
+        .icon{
+            transition: .5s ease-in-out;
+            @include _main($display:flex,$width:90px, $height:70px , $border-radius:35px, $border:1px solid rgb(189, 189, 189));
+            justify-content: center;
+            align-items: center;
+        } 
+        .writting_fields{
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            h6{
+                font-size: 14px;
+            }
+        }
+        &:hover .icon{
+            @include _main(  $border:1px solid blue, $back-color:blue, $color:white);
+        }
+    }
+}
+.tags{
+    margin-top: 40px;
+    h4{
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position:absolute ;
+            content: "";
+            @include _main($width:86px, $height:3px , $back-color:blue, $top:39px, $left:1px);; 
+        }}
+        .tags_items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            a{
+                transition: .3s ease-in-out;
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                border: 1px solid #686777;
+                padding: 10px 10px 10px 10px;
+                margin: 10px;
+                border-radius: 10px;
+                &:hover{
+                    border: 1px solid blue;
+                    color: white;
+                    background-color: blue;
+                }
+            }
+        }
+}
+}}
+}
